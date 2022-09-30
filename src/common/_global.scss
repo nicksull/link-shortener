@@ -1,0 +1,8 @@
+body {
+  background: linear-gradient(135deg, #dbe5f5 0%, #b2cde6 100%);
+  font-family: 'Montserrat', 'sans-serif';
+}
+
+#app {
+  @apply h-screen;
+}

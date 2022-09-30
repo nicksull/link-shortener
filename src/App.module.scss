@@ -1,0 +1,17 @@
+.app {
+  &__floatingLabel {
+    @apply relative w-full;
+
+    label {
+      top: calc(50% - 7px);
+      z-index: -10;
+
+      @apply absolute left-0 opacity-0 transition-all duration-300 text-white;
+    }
+
+    input:not(:placeholder-shown) + label {
+      @apply opacity-70 z-0;
+      transform: translateY(-60px);
+    }
+  }
+}
